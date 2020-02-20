@@ -1,0 +1,3 @@
+- Adaptive vs responsive
+- Devtools
+- mobile first vs desktop first

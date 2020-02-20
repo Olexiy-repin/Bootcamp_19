@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 07 classwork</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <form action="#" class="contact-form">
+        <input id="name" type="text" name="name" class="contact-form__input" placeholder="Your name...*" minlength="2"
+            required autofocus>
+        <input type="email" name="email" class="contact-form__input" placeholder="Your email...*" required>
+        <input type="tel" name="phone" class="contact-form__input" placeholder="Your phone...*" required
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
+
+        <fieldset>
+            <legend>Age</legend>
+            <label> 17 <input type="radio" name="age" id="age17" value="17"></label>
+
+            18
+            <input type="radio" name="age" id="" value="18" checked>
+            19
+            <input type="radio" name="age" id="" value="19">
+        </fieldset>
+        <section>
+            <h2>Hobby</h2>
+            <label for="hobbyBoxing">boxing</label>
+            <input type="checkbox" name="Hobby" id="hobbyBoxing" value="boxing">
+            swiming
+            <input type="checkbox" name="Hobby" id="" value="swiming">
+            dance
+            <input type="checkbox" name="Hobby" id="" value="dance" checked>
+        </section>
+        <section>
+            <h2>Message</h2>
+            <textarea class="textarea" name="message" placeholder="Your message..." required></textarea>
+        </section>
+        <section>
+            <h2>City</h2>
+            <select name="city" size="3">
+                <option selected disabled>Your city</option>
+                <option value="Kyiv">Kyiv</option>
+                <option value="Kharkov">Kharkov</option>
+                <option value="Miami">Miami</option>
+                <option value="Miami">Miami</option>
+                <option value="Miami">Miami</option>
+                <option value="Miami">Miami</option>
+                <option value="Miami">Miami</option>
+            </select>
+        </section>
+        <button type="submit">submit</button>
+        <button type="reset">clear</button>
+    </form>
+    <!-- <h1 class="title">I`m title</h1>
+    <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique placeat vel amet
+        distinctio omnis est et dolorem quia blanditiis mollitia modi consequuntur, aut, sint veritatis, molestias
+        architecto laborum aperiam autem!</p>
+    <div class="wrapper">
+        <div class="box"></div>
+        <p class="wrapper__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas similique quos voluptas
+            eaque odio dolores vitae quo deserunt sapiente, delectus vero error officiis ex distinctio animi maiores
+            architecto ipsa explicabo?</p>
+    </div> -->
+
+</body>
+
+</html>
