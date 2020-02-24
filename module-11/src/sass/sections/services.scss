@@ -1,0 +1,109 @@
+.services {
+  padding: 98px 0;
+}
+
+.sections-title {
+  @extend %sections-title;
+}
+
+.sections-description {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.services__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.services__list-item {
+  width: 348px;
+  text-align: center;
+}
+
+/* .services__list-item::before {
+    display: block;
+    content: "";
+    width: 86px;
+    height: 86px;
+    border-radius: 50%;
+    border: 2px solid rgb(221, 221, 221);
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 26px;
+  } */
+
+/* .services__list-item:first-child::before {
+    background-image: url("../images/services/fa-font.png");
+  }
+  
+  .services__list-item:nth-child(2)::before {
+    background-image: url("../images/services/fa-code.png");
+  }
+  
+  .services__list-item:last-child::before {
+    background-image: url("../images/services/fa-support.png");
+  } */
+
+.services__list-item:hover .services__list-icon-wrapper {
+  background-color: $main-color;
+  border-color: $main-color;
+}
+
+.services__list-item:hover .services__list-icon {
+  fill: #fff;
+}
+
+.services__list-icon-wrapper {
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  border: 2px solid rgb(221, 221, 221);
+  margin: 0 auto;
+  margin-bottom: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+.services__list-icon {
+  width: 48px;
+  height: 48px;
+  fill: $main-color;
+  -webkit-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+.services__list-item-title {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.services__list-item-description {
+  font-family: 'Roboto Slab', serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}

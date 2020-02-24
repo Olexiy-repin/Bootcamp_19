@@ -1,0 +1,6 @@
+@mixin font($fs: 16px, $lh: 1.2, $fw: 400, $ff: 'Montserrat') {
+  font-family: $ff;
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+}

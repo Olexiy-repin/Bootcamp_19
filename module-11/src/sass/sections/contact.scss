@@ -1,0 +1,142 @@
+.contact {
+  padding: 6.125rem 0;
+
+  &__list {
+    width: 14.75rem;
+
+    &-title {
+      font-size: 0.875rem;
+      font-weight: 600;
+      line-height: 1.25rem;
+      text-transform: uppercase;
+      margin-bottom: 0.75rem;
+    }
+
+    &-link {
+      font-family: 'Roboto Slab', serif;
+      font-size: 0.75rem;
+      line-height: 1.25rem;
+      color: $text-color;
+    }
+
+    &-item {
+      padding-left: 1.75rem;
+      background-repeat: no-repeat;
+      background-position: left top;
+
+      &_geo {
+        background-image: url('../images/contact/fa-map-marker.png');
+      }
+
+      &_phone {
+        background-image: url('../images/contact/fa-mobile-phone.png');
+      }
+
+      &_email {
+        background-image: url('../images/contact/fa-envelope-o.png');
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  &__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+  }
+
+  &__form {
+    width: 45.625rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+
+    &-input,
+    &-message {
+      font-family: 'Roboto Slab', serif;
+      font-size: 0.75rem;
+      line-height: 1.25rem;
+      padding-left: 1.125rem;
+      border: 1px solid rgb(85, 85, 85);
+      margin-bottom: 1.25rem;
+
+      &::placeholder {
+        text-transform: uppercase;
+      }
+
+      &:focus {
+        outline: none;
+      }
+
+      &:required:focus:valid:not(:placeholder-shown) {
+        border: 1px solid green;
+      }
+
+      &:required:focus:invalid:not(:placeholder-shown) {
+        border: 1px solid red;
+      }
+    }
+
+    &-input {
+      width: 22rem;
+      height: 2.75rem;
+    }
+
+    &-message {
+      width: 100%;
+      height: 6.5rem;
+      resize: none;
+      padding-top: 1.125rem;
+    }
+
+    &-btn {
+      width: 10.5rem;
+      height: 2.625rem;
+      border: 1px solid rgb(85, 85, 85);
+      background-color: transparent;
+      cursor: pointer;
+      font-family: 'Roboto Slab', serif;
+      font-size: 0.75rem;
+      line-height: 1.25rem;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+      color: $text-color;
+      margin-right: 2.375rem;
+
+      &-wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+      }
+
+      &-info {
+        font-family: 'Roboto Slab', serif;
+        font-size: 0.75rem;
+        line-height: 1.25rem;
+
+        &::before {
+          display: inline-block;
+          content: '*';
+          color: $main-color;
+        }
+      }
+    }
+  }
+}
